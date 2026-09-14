@@ -26,7 +26,7 @@ const CREATORS = [
     specialty: "Physician & Podcast Host",
     tagline: "Travel more. Travel business. Travel guilt-free.",
     site: "https://pointmetofirstclass.com",
-    photo: "",
+    photo: "assets/creators/devon-gimbel.jpg",
     socials: {
       instagram: "https://www.instagram.com/pointmeto_firstclass",
       facebook: "https://www.facebook.com/PointMeToFirstClass",
