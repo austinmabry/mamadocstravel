@@ -12,7 +12,8 @@ It is a plain static site (HTML + CSS + a little JavaScript), so it deploys to C
 | `styles.css` | Styling |
 | `creators.js` | **The list of physicians** — edit this to add/remove people |
 | `script.js` | Renders the cards and powers the search box |
-| `assets/hero.jpg` | Hero photo |
+| `assets/hero.jpg` | Desktop hero (the full composed picture; nav/buttons in it are clickable via hotspots in `index.html`) |
+| `assets/hero-mobile.jpg` | Text-free crop of the hero used on phones |
 | `assets/creators/` | Drop creator headshots here (optional) |
 | `_headers` | Cloudflare Pages security/cache headers |
 

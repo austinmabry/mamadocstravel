@@ -36,7 +36,22 @@
 
     <!-- ============ HERO ============ -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__photo" role="img" aria-label="A woman in a wide-brimmed straw hat that reads “collect moments not things”, watching the sunset over the sea with a glass of rosé."></div>
+      <!-- Desktop: the full composed hero image, with invisible clickable hotspots
+           positioned (in %) over the nav links and buttons baked into the picture. -->
+      <div class="hero__full">
+        <img src="assets/hero.jpg" width="1808" height="870"
+             alt="hey petty Bestie. you’re too smart to pay full price to travel. A curated list of woman physicians in the points and miles space. Real doctors. Real strategies. Real adventures. Because you work hard — you deserve to see the world."
+             fetchpriority="high">
+        <a class="hotspot" style="left:4.5%;top:2%;width:23%;height:14%" href="#top" aria-label="Home"></a>
+        <a class="hotspot" style="left:46.5%;top:3.5%;width:8.5%;height:6%" href="#physicians" aria-label="Physicians"></a>
+        <a class="hotspot" style="left:55.5%;top:3.5%;width:8%;height:6%" href="#why" aria-label="Travel tips"></a>
+        <a class="hotspot" style="left:64.5%;top:3.5%;width:7.5%;height:6%" href="#physicians" aria-label="Resources"></a>
+        <a class="hotspot" style="left:73%;top:3.5%;width:5.5%;height:6%" href="#about" aria-label="About"></a>
+        <a class="hotspot" style="left:80%;top:1.5%;width:17.5%;height:10%" href="#physicians" aria-label="Good flights, good company"></a>
+        <a class="hotspot" style="left:7%;top:67.5%;width:22.5%;height:8%" href="#physicians" aria-label="Meet the doctors"></a>
+      </div>
+
+      <!-- Mobile / narrow screens: real text over a text-free crop of the photo. -->
       <div class="hero__content">
         <h1 id="hero-title" class="hero__title">
           hey Mama Doc. <span class="heart heart--big">♡</span><br>
@@ -50,6 +65,7 @@
         </p>
         <a class="btn btn--pink btn--lg" href="#physicians">Meet the doctors&nbsp;↓</a>
       </div>
+      <div class="hero__photo" role="img" aria-label="A woman in a wide-brimmed straw hat that reads “collect moments not things”, watching the sunset over the sea with a glass of rosé."></div>
     </section>
 
     <!-- ============ VALUE STRIP ============ -->
