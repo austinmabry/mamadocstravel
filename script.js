@@ -100,9 +100,9 @@
   }
 
   function joinCard() {
-    const subject = encodeURIComponent("Request to be listed on Mama Docs Travel");
+    const subject = encodeURIComponent("Request to be listed on Petty Bestie");
     const body = encodeURIComponent(
-      "Hi! I'd like to be added to the Mama Docs Travel directory.\n\nName:\nSpecialty:\nWebsite:\nInstagram / TikTok / YouTube:\nOne-line tagline:\n"
+      "Hi! I'd like to be added to the Petty Bestie directory.\n\nName:\nSpecialty:\nWebsite:\nInstagram / TikTok / YouTube:\nOne-line tagline:\n"
     );
     return (
       '<article class="card card--join">' +

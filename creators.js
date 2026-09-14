@@ -1,5 +1,5 @@
 /* =====================================================================
-   Mama Docs Travel — creator directory
+   Petty Bestie — creator directory
    ---------------------------------------------------------------------
    To add a new physician, copy one of the objects below, paste it at the
    end of the CREATORS array, and fill in her details. Only "name" and

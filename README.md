@@ -1,4 +1,4 @@
-# Mama Docs Travel
+# Petty Bestie (mamadocstravel.com)
 
 Landing page for **www.mamadocstravel.com** — a curated directory of women physicians who create content about points, miles and award travel.
 
