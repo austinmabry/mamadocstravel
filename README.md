@@ -27,10 +27,6 @@ It is a plain static site (HTML + CSS + a little JavaScript), so it deploys to C
 
 Supported social keys: `instagram`, `tiktok`, `youtube`, `facebook`, `podcast`, `website`.
 
-## Contact email
-
-The "Join the journey" and "Request to be listed" buttons open an email to the address in `CONTACT_EMAIL` at the bottom of `creators.js`. Change it there.
-
 ## Deploying to Cloudflare Pages (free)
 
 1. In the Cloudflare dashboard go to **Workers & Pages → Create → Pages → Connect to Git** and pick this repository.

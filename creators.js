@@ -44,8 +44,19 @@ const CREATORS = [
       instagram: "https://www.instagram.com/pointsandmilesdoc",
       website: "https://www.pointsandmilesdoc.com"
     }
+  },
+  {
+    name: "Dr. Courtney Downes",
+    handle: "@prescriptiontotravelmd",
+    specialty: "Emergency Medicine",
+    tagline: "Wellness, adventure and travel on points.",
+    site: "https://prescriptiontotravelmd.com",
+    photo: "assets/creators/courtney-downes.jpg",
+    socials: {
+      instagram: "https://www.instagram.com/prescriptiontotravelmd",
+      youtube: "https://www.youtube.com/@PrescriptiontoTravelMD",
+      podcast: "https://podcasts.apple.com/us/podcast/prescription-to-travel-md/id1736339637",
+      website: "https://prescriptiontotravelmd.com"
+    }
   }
 ];
-
-/* Email used by the "Join the journey" / "Request to be listed" buttons. */
-const CONTACT_EMAIL = "hello@mamadocstravel.com";

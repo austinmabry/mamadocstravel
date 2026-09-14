@@ -99,28 +99,6 @@
     );
   }
 
-  function joinCard() {
-    const subject = encodeURIComponent("Request to be listed on Petty Bestie");
-    const body = encodeURIComponent(
-      "Hi! I'd like to be added to the Petty Bestie directory.\n\nName:\nSpecialty:\nWebsite:\nInstagram / TikTok / YouTube:\nOne-line tagline:\n"
-    );
-    return (
-      '<article class="card card--join">' +
-      '<div class="card__avatar"><div class="card__monogram card__monogram--join" aria-hidden="true"><span>+</span></div></div>' +
-      '<h3 class="card__name">Your name here?</h3>' +
-      '<p class="card__specialty">Woman physician &amp; points creator</p>' +
-      '<p class="card__tagline">This list is growing. Ask to be added and we’ll be in touch.</p>' +
-      '<a class="btn btn--pink card__visit" href="mailto:' +
-      esc(CONTACT_EMAIL) +
-      "?subject=" +
-      subject +
-      "&body=" +
-      body +
-      '">Request to be listed</a>' +
-      "</article>"
-    );
-  }
-
   function matches(c, q) {
     if (!q) return true;
     const hay = [c.name, c.handle, c.specialty, c.tagline, Object.keys(c.socials || {}).map((k) => LABELS[k]).join(" ")]
@@ -132,7 +110,7 @@
   function render() {
     const q = (search && search.value || "").trim().toLowerCase();
     const list = CREATORS.filter((c) => matches(c, q));
-    grid.innerHTML = list.map(card).join("") + (q ? "" : joinCard());
+    grid.innerHTML = list.map(card).join("");
     if (emptyState) emptyState.hidden = list.length > 0 || !q;
     if (countEl) {
       countEl.textContent =
@@ -142,12 +120,6 @@
 
   if (search) search.addEventListener("input", render);
   render();
-
-  /* Wire up every mailto CTA with the shared contact email. */
-  document.querySelectorAll("[data-mailto]").forEach((a) => {
-    const subject = encodeURIComponent(a.getAttribute("data-mailto") || "Hello from mamadocstravel.com");
-    a.href = "mailto:" + CONTACT_EMAIL + "?subject=" + subject;
-  });
 
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
