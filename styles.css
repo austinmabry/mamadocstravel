@@ -160,7 +160,6 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
   text-align: center;
   display: flex; flex-direction: column; align-items: center;
 }
-.card--join { background: linear-gradient(180deg, #fff7f3, var(--blush-soft)); border: 1px dashed rgba(31,61,61,.25); box-shadow: none; }
 .card__avatar { width: 124px; height: 124px; border-radius: 50%; overflow: hidden; margin-bottom: 18px; box-shadow: 0 6px 18px rgba(31,61,61,.14); }
 .card__photo { width: 100%; height: 100%; object-fit: cover; }
 .card__monogram {
@@ -168,7 +167,6 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
   background: radial-gradient(circle at 30% 25%, #f6d7d3, var(--blush) 60%, #e9aeb1);
   font-family: var(--font-display); font-size: 2.4rem; color: var(--teal-deep); letter-spacing: 0.04em;
 }
-.card__monogram--join { background: #fff; color: var(--teal); font-size: 3rem; border: 2px dashed rgba(31,61,61,.25); }
 .card__name { font-family: var(--font-display); font-size: 1.22rem; font-weight: 600; margin: 0 0 2px; color: var(--ink); }
 .card__handle { margin: 0 0 10px; font-size: 0.86rem; color: var(--muted); }
 .card__specialty { margin: 0 0 4px; font-size: 0.86rem; color: var(--muted); }
@@ -181,7 +179,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 .doctors__empty { text-align: center; color: var(--muted); margin: 30px 0; }
 .doctors__disclaimer { max-width: 760px; margin: 40px auto 0; text-align: center; font-size: 0.8rem; color: var(--muted); }
 
-/* ---------- join band ---------- */
+/* ---------- closing band ---------- */
 .band {
   position: relative;
   background-color: var(--blush-soft);
