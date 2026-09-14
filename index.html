@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mama Docs Travel — Women physicians who travel on points &amp; miles</title>
+  <meta name="description" content="A curated list of women physicians who create content about points, miles and award travel. Real doctors. Real strategies. Real adventures.">
+  <meta property="og:title" content="Mama Docs Travel">
+  <meta property="og:description" content="A curated list of women physicians in the points &amp; miles space.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.mamadocstravel.com/">
+  <meta property="og:image" content="https://www.mamadocstravel.com/assets/hero.jpg">
+  <meta name="theme-color" content="#f7efe9">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Jost:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Mama Docs Travel — home">
+      <span class="brand__script">Mama Docs <span class="heart">♡</span></span>
+      <span class="brand__tag">Travel smarter together</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#physicians">Physicians</a>
+      <a href="#why">Why points</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="btn btn--dark btn--pill header__cta" href="#physicians">Good flights<br>good company <span class="heart">♥</span></a>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__photo" role="img" aria-label="A woman in a wide-brimmed straw hat that reads “collect moments not things”, watching the sunset over the sea with a glass of rosé."></div>
+      <div class="hero__content">
+        <h1 id="hero-title" class="hero__title">
+          hey Mama Doc. <span class="heart heart--big">♡</span><br>
+          you’re too smart to<br>
+          pay full price to travel.
+        </h1>
+        <p class="hero__kicker">A curated list of women physicians in the points &amp; miles space</p>
+        <p class="hero__sub">
+          Real doctors. Real strategies. Real adventures.<br>
+          Because you work hard — you deserve to see the world.
+        </p>
+        <a class="btn btn--pink btn--lg" href="#physicians">Meet the doctors&nbsp;↓</a>
+      </div>
+    </section>
+
+    <!-- ============ VALUE STRIP ============ -->
+    <section id="why" class="strip" aria-label="What you’ll find here">
+      <ul class="strip__list">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 16.5 21 3.5l-5 17-4.5-6.5L2.5 16.5zM11.5 14 21 3.5"/></svg>
+          <strong>Learn</strong><span>Points &amp; miles<br>made simple</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg>
+          <strong>Connect</strong><span>With fellow<br>women physicians</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg>
+          <strong>Explore</strong><span>More of the world<br>for less</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><circle cx="5.5" cy="10" r="2.2"/><circle cx="18.5" cy="10" r="2.2"/><path d="M7 20a5 5 0 0 1 10 0M1.5 18a4 4 0 0 1 5.5-3.5M22.5 18a4 4 0 0 0-5.5-3.5"/></svg>
+          <strong>Support</strong><span>A community that<br>gets it</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-8-5.2-8-11A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5c0 5.8-8 11-8 11z"/></svg>
+          <strong>Travel smarter</strong><span>Because you’re<br>too smart to pay full price</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ THE DOCTORS ============ -->
+    <section id="physicians" class="doctors" aria-labelledby="doctors-title">
+      <div class="doctors__head">
+        <div>
+          <h2 id="doctors-title" class="script-title">The Doctors <span class="heart">♡</span></h2>
+          <p class="doctors__sub">Women physicians. Points experts. World explorers.</p>
+          <p id="doctor-count" class="doctors__count"></p>
+        </div>
+        <label class="search" for="doctor-search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+          <input id="doctor-search" type="search" placeholder="Search by name, specialty, or platform…" autocomplete="off">
+        </label>
+      </div>
+
+      <div id="doctor-grid" class="grid" aria-live="polite"></div>
+      <p id="doctor-empty" class="doctors__empty" hidden>No matches yet — try a different name or specialty.</p>
+
+      <p class="doctors__disclaimer">
+        Every physician listed here has given permission to appear. Each creator is independent; Mama Docs Travel isn’t affiliated with, and doesn’t earn from, their sites or offers.
+      </p>
+    </section>
+
+    <!-- ============ JOIN BAND ============ -->
+    <section id="about" class="band" aria-labelledby="band-title">
+      <div class="band__inner">
+        <div>
+          <h2 id="band-title" class="script-title script-title--light">More women. A bigger world.</h2>
+          <p class="band__sub">Different paths. Same destination: freedom.</p>
+          <p class="band__body">
+            Mama Docs Travel is a simple, growing directory of women physicians who teach points, miles and award travel.
+            Are you a woman physician creating in this space? We’d love to add you.
+          </p>
+        </div>
+        <a class="btn btn--dark btn--pill btn--lg" href="#" data-mailto="Request to be listed on Mama Docs Travel">Join the journey <span class="heart">♥</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Mama Docs Travel · mamadocstravel.com</p>
+    <p><a href="#" data-mailto="Hello from mamadocstravel.com">Contact</a> · <a href="#top">Back to top ↑</a></p>
+  </footer>
+
+  <script src="creators.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
