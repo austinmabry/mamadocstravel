@@ -39,7 +39,7 @@ const CREATORS = [
     specialty: "Academic Surgeon",
     tagline: "Fighting burnout with points and miles.",
     site: "https://www.pointsandmilesdoc.com",
-    photo: "",
+    photo: "assets/creators/kelly-wright.jpg",
     socials: {
       instagram: "https://www.instagram.com/pointsandmilesdoc",
       website: "https://www.pointsandmilesdoc.com"
