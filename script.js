@@ -10,6 +10,8 @@
       '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="4"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor" stroke="none"/></svg>',
     facebook:
       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h2.5V4.5H14A3.5 3.5 0 0 0 10.5 8v2.5H8V14h2.5v6H14v-6h2.5l.5-3.5h-3V8.5c0-.3.2-.5.5-.5z"/></svg>',
+    pinterest:
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10.5 21c.5-2 1-4 1.5-6.5M12 14.5c-2.5 0-3.5-2-3-4.2A3.8 3.8 0 0 1 12.8 7c2.4 0 3.7 1.6 3.2 3.8-.4 1.8-1.5 3.2-3.2 3.2-.8 0-1.4-.4-1.6-1"/></svg>',
     podcast:
       '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></svg>',
     website:
@@ -21,6 +23,7 @@
     tiktok: "TikTok",
     youtube: "YouTube",
     facebook: "Facebook",
+    pinterest: "Pinterest",
     podcast: "Podcast",
     website: "Website"
   };

@@ -16,7 +16,7 @@
                   "assets/creators/jane.jpg" (drop the file in that folder).
                   If omitted, a monogram avatar is shown instead.
      socials    – optional links. Supported keys: instagram, tiktok,
-                  youtube, facebook, podcast, website
+                  youtube, facebook, pinterest, podcast, website
    ===================================================================== */
 
 const CREATORS = [
@@ -69,6 +69,20 @@ const CREATORS = [
     socials: {
       instagram: "https://www.instagram.com/doctorpointsandpassports/",
       website: "https://doctorpointsandpassports.com"
+    }
+  },
+  {
+    name: "Dr. Shannon",
+    handle: "@lattesandlayoversblog",
+    specialty: "Public Health",
+    tagline: "Sip, stamp, repeat.",
+    site: "https://lattes-and-layovers.com",
+    photo: "assets/creators/shannon-lattes-and-layovers.jpg",
+    socials: {
+      instagram: "https://www.instagram.com/lattesandlayoversblog",
+      tiktok: "https://www.tiktok.com/@lattesandlayoversblog",
+      pinterest: "https://www.pinterest.com/lattesandlayoversblog",
+      website: "https://lattes-and-layovers.com"
     }
   }
 ];

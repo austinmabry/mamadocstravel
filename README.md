@@ -27,7 +27,7 @@ It is a plain static site (HTML + CSS + a little JavaScript), so it deploys to C
 4. (Optional) Put a square headshot in `assets/creators/` and set `photo: "assets/creators/her-name.jpg"`. Without a photo a monogram avatar is shown.
 5. Commit and push to `main` — Cloudflare redeploys automatically.
 
-Supported social keys: `instagram`, `tiktok`, `youtube`, `facebook`, `podcast`, `website`.
+Supported social keys: `instagram`, `tiktok`, `youtube`, `facebook`, `pinterest`, `podcast`, `website`.
 
 ## Deploying on Cloudflare (free)
 
