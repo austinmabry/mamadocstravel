@@ -58,5 +58,17 @@ const CREATORS = [
       podcast: "https://podcasts.apple.com/us/podcast/prescription-to-travel-md/id1736339637",
       website: "https://prescriptiontotravelmd.com"
     }
+  },
+  {
+    name: "Dr. Michelle",
+    handle: "@doctorpointsandpassports",
+    specialty: "Emergency Medicine",
+    tagline: "Everyday spending, turned into trips around the globe.",
+    site: "https://doctorpointsandpassports.com",
+    photo: "assets/creators/michelle-doctorpointsandpassports.jpg",
+    socials: {
+      instagram: "https://www.instagram.com/doctorpointsandpassports/",
+      website: "https://doctorpointsandpassports.com"
+    }
   }
 ];
