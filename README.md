@@ -15,7 +15,9 @@ It is a plain static site (HTML + CSS + a little JavaScript), so it deploys to C
 | `assets/hero.jpg` | Desktop hero (the full composed picture; nav/buttons in it are clickable via hotspots in `index.html`) |
 | `assets/hero-mobile.jpg` | Text-free crop of the hero used on phones |
 | `assets/creators/` | Drop creator headshots here (optional) |
-| `_headers` | Cloudflare Pages security/cache headers |
+| `_headers` | Cloudflare security/cache headers |
+| `wrangler.jsonc` | Cloudflare Workers config (static assets, no build step) |
+| `.assetsignore` | Repo files that should not be uploaded to the site |
 
 ## Adding a physician
 
@@ -27,11 +29,11 @@ It is a plain static site (HTML + CSS + a little JavaScript), so it deploys to C
 
 Supported social keys: `instagram`, `tiktok`, `youtube`, `facebook`, `podcast`, `website`.
 
-## Deploying to Cloudflare Pages (free)
+## Deploying on Cloudflare (free)
 
-1. In the Cloudflare dashboard go to **Workers & Pages → Create → Pages → Connect to Git** and pick this repository.
-2. Production branch: `main`. Framework preset: **None**. Build command: *(leave empty)*. Build output directory: `/`.
-3. Save and deploy. Then under **Custom domains** add `mamadocstravel.com` and `www.mamadocstravel.com` (Cloudflare fills in the DNS records for you if the domain is already on Cloudflare).
+**Workers (recommended, uses `wrangler.jsonc`):** In the Cloudflare dashboard go to **Workers & Pages → Create → Workers → Import a repository** and pick this repo. Production branch `main`, build command *(empty)*, deploy command `npx wrangler deploy`. Every push to `main` redeploys. Under **Settings → Domains & Routes** add `mamadocstravel.com` and `www.mamadocstravel.com`.
+
+**Pages (also works):** **Workers & Pages → Create → Pages → Connect to Git**, framework preset **None**, build command *(empty)*, build output directory `/`. Then add the custom domains.
 
 ## Local preview
 

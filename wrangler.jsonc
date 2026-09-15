@@ -1,0 +1,16 @@
+/**
+ * Cloudflare Workers configuration for mamadocstravel.com.
+ * The site is plain static files served from the repo root, so there is no
+ * build step: Cloudflare just uploads everything here (minus .assetsignore).
+ * Deploy command in the Cloudflare dashboard: npx wrangler deploy
+ */
+{
+  "$schema": "https://developers.cloudflare.com/schemas/wrangler.json",
+  "name": "mamadocstravel",
+  "compatibility_date": "2026-08-01",
+  "assets": {
+    "directory": "./",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}
