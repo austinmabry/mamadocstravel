@@ -1,0 +1,14 @@
+{
+  "name": "mamadocstravel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static landing page for mamadocstravel.com (Petty Bestie)",
+  "scripts": {
+    "build": "echo \"Static site - nothing to build\"",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.131.2"
+  }
+}
